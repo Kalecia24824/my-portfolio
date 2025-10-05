@@ -1,51 +1,50 @@
-*{
+* {
   box-sizing: border-box;
   background-color: rgb(89, 186, 255);
 }
 
-html, body{
+html, body {
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  height: 100vh;  /* allows vertical centering */
   max-width: 1000px;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* center vertically */
+  align-items: center;     /* center horizontally */
 }
 
-button{
+button {
   background-color: rgb(84, 54, 255);
   box-shadow: 0 0 4px 6px rgba(109, 56, 113, 0.551);
   color: rgb(0, 0, 0);
   font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 25px;
-  margin: 200px;
+  margin: 20px;
   padding: 25px;
   text-align: center;
 }
 
-/*Button Hover*/
-button:hover{
+button:hover {
   background-color: rgb(1, 1, 129);
-  color:white;
+  color: white;
 }
 
-/*Button Active*/
-button:active{
+button:active {
   transform: translateY(3px);
 }
 
-a{
+a {
   font-size: 20px;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-top: 10px;      /* small space below button */
 }
 
-@media (min-width: 300px){
-  button{
+@media (min-width: 300px) {
+  button {
     padding: 20px;
     font-size: 20px;
   }
